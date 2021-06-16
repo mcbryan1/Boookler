@@ -2,14 +2,11 @@ const colors = {
     white: "#ffffff",
     black: "#000000",
     gray: "#afafaa",
-    blue: "#3b5998",
-    purple: "#525efc",
-    cafeNoir: "#4D2D13",
-    desertSand: "#D1B59F",
-    ghostWhite: "#F3F2F8",
-    red: "#DB4437",
-    darkGray: "#333",
-    sandWhite: "#d1b49f86"
+    myDark: "99333FF",
+    background: "000023",
+    card: "#000028",
+    border: "#000028",
+    notification: "#9933FF"
   };
   
   export default colors;

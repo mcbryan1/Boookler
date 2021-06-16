@@ -1,12 +1,18 @@
-import React from 'react'
-import { View, Text } from 'react-native'
+import React, { useState, useContext } from "react";
+import { View, Text, Button } from "react-native";
+import styles from "./styles";
+import { EventRegister } from "react-native-event-listeners";
+import themeContext from "../../../config/themeContext";
 
-const Landing = () => {
-    return (
-        <View>
-            <Text>Landing</Text>
-        </View>
-    )
-}
+const Landing = ({ navigation }) => {
+  const theme = useContext(themeContext);
 
-export default Landing
+  return (
+    <View style={[styles.mainConatiner, { backgroundColor: theme.background }]}>
+      <Text style={{ color: theme.color }}>Landing</Text>
+      <Button title="Go To Tabs" onPress={() => navigation.navigate("tabs")} />
+    </View>
+  );
+};
+
+export default Landing;

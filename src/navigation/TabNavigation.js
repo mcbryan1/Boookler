@@ -4,8 +4,8 @@ import { Entypo, FontAwesome5 } from "@expo/vector-icons";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import Home from "../views/screens/Home/Home";
 import More from "../views/screens/More/More";
-import Bookmarks from '../views/screens/Bookmarks/Bookmarks'
-
+import Bookmarks from "../views/screens/Bookmarks/Bookmarks";
+import theme from "../config/theme";
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -15,8 +15,6 @@ const TabNavigation = () => {
       initialRouteName="Home"
       activeColor="#4D2D13"
       inactiveColor="#D1B59F"
-      
-      barStyle={{ backgroundColor: colors.white }}
     >
       <Tab.Screen
         name="home"
@@ -28,7 +26,7 @@ const TabNavigation = () => {
           ),
         }}
       />
-       <Tab.Screen
+      <Tab.Screen
         name="bookmarks"
         component={Bookmarks}
         options={{
@@ -48,7 +46,6 @@ const TabNavigation = () => {
           ),
         }}
       />
-      
     </Tab.Navigator>
   );
 };
