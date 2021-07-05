@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import StackNavigation from "./AuthStack";
-import { NavigationContainer, DarkTheme, DefaultTheme } from "@react-navigation/native";
+import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { EventRegister } from "react-native-event-listeners";
 import { colors } from "../constants";
 import themeContext from "../config/themeContext";
@@ -38,7 +38,7 @@ const Root = () => {
     ...DefaultTheme,
     colors: {
       ...DefaultTheme.colors,
-      primary: '#192734',
+      primary: colors.myDark,
     },
   };
   return (

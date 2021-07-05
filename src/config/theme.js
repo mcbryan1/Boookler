@@ -1,16 +1,16 @@
-
 const theme = {
-    light:{
-        theme: 'light',
-        color: "black",
-        background: 'white',
-    },
-    dark: {
-        theme: 'dark',
-        color: "white",
-        background: '#192734',
-        
-    }
-}
+  light: {
+    theme: "light",
+    color: "#141010",
+    background: "white",
+    card: "#f0f0f0"
+  },
+  dark: {
+    theme: "dark",
+    color: "#fafafa",
+    background: "#192734",
+    card: "#324352"
+  },
+};
 
-export default theme
+export default theme;

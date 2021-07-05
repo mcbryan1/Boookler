@@ -9,7 +9,7 @@ const Landing = ({ navigation }) => {
 
   return (
     <View style={[styles.mainConatiner, { backgroundColor: theme.background }]}>
-      <Text style={{ color: theme.color }}>Landing</Text>
+      <Text style={[styles.text,{ color: theme.color }]}>Landing</Text>
       <Button title="Go To Tabs" onPress={() => navigation.navigate("tabs")} />
     </View>
   );

@@ -2,11 +2,12 @@ const colors = {
     white: "#ffffff",
     black: "#000000",
     gray: "#afafaa",
-    myDark: "99333FF",
+    myDark: "#192734",
     background: "000023",
     card: "#000028",
     border: "#000028",
-    notification: "#9933FF"
+    notification: "#9933FF",
+    blue: "#00acee"
   };
   
   export default colors;
