@@ -37,8 +37,8 @@ const Landing = ({ navigation }) => {
             </Text>
           </View>
           <View style={styles.googleContainer}>
-            <Text style={styles.googleContainerText}>Continue With Google</Text>
-            <TouchableOpacity onPress={() => navigation.navigate('tabs')}>
+            <Text style={styles.googleContainerText}>Get Started</Text>
+            <TouchableOpacity onPress={() => navigation.navigate('signup')}>
               <View style={styles.googleButtonViewOne}>
                 <View style={styles.googleButtonViewTwo}>
                   <View style={styles.googleButtonViewThree}>

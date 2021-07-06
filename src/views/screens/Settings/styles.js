@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   },
   profileEmail:{
     color: "#aaa",
-    fontFamily: 'Medium',
+    fontFamily: 'SemiBold',
     fontSize: dimensions.font.sm
   },
   preferencesCard:{

@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   googleContainerText:{
     fontFamily: "Bold",
     color: colors.white,
-    fontSize: 20
+    fontSize: 25
   },
   googleButtonViewOne:{
     backgroundColor:"rgba(0, 172, 238, 0.4)",
@@ -64,7 +64,8 @@ const styles = StyleSheet.create({
     width: dimensions.image.md,
     borderRadius: dimensions.radius.lg,
    justifyContent: 'center',
-   alignItems: 'center'
+   alignItems: 'center',
+   marginLeft: dimensions.margin.md
   },
   googleButtonViewTwo:{
     backgroundColor:"rgba(0, 172, 238, 0.6)",
