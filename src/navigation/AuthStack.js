@@ -22,7 +22,7 @@ const categoryOptions = {
   headerTintColor: colors.white,
 };
 
-const AuthStack = () => {
+const AuthStack = ({auth}) => {
   return (
     <View style={{ flex: 1 }}>
       <Stack.Navigator initialRouteName="landing">

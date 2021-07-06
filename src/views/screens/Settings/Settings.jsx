@@ -1,10 +1,10 @@
 import React, { useState, useContext } from "react";
-import { View, Text, Switch, Image, ScrollView } from "react-native";
+import { View, Text, Switch, Image, ScrollView, TouchableOpacity } from "react-native";
 import styles from "./styles";
 import { EventRegister } from "react-native-event-listeners";
 import themeContext from "../../../config/themeContext";
 import pp from "../../../../assets/mypic.jpg";
-import { Feather, Fontisto } from "@expo/vector-icons";
+import { Feather, SimpleLineIcons } from "@expo/vector-icons";
 
 const More = () => {
   const [mode, setMode] = useState(false);
@@ -24,7 +24,7 @@ const More = () => {
             Preferences
           </Text>
         </View>
-        <View style={styles.darkMode}>
+        <View style={styles.preferencesContainer}>
           <View style={styles.darkModeMainContainer}>
             <View style={styles.darkModeContainer}>
               <Feather
@@ -45,6 +45,20 @@ const More = () => {
                 }}
               />
             </View>
+          </View>
+        </View>
+
+        <View style={styles.preferencesContainer}>
+          <View style={styles.darkModeMainContainer}>
+            <TouchableOpacity style={styles.darkModeContainer}>
+              <SimpleLineIcons
+                name="logout"
+                style={[styles.darkModeIcon, { color: theme.color }]}
+              />
+              <Text style={[styles.dackModeText, { color: theme.color }]}>
+                Logout
+              </Text>
+            </TouchableOpacity>
           </View>
         </View>
       </ScrollView>

@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Regular',
     fontSize: 20
   },
-  darkMode:{
+  preferencesContainer:{
     borderBottomWidth: .3,
     borderBottomColor: colors.gray,
   }
